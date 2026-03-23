@@ -1,6 +1,6 @@
 # Python cache
 __pycache__/
-*.pyc
+*.py[cod]
 
 # Pytest cache
 .pytest_cache/
@@ -8,9 +8,13 @@ __pycache__/
 # Virtual environments
 venv/
 env/
+.venv/
 
-# PyCharm
+# PyCharm / IDE
 .idea/
+
+# VS Code (optional but good)
+.vscode/
 
 # OS files
 .DS_Store
