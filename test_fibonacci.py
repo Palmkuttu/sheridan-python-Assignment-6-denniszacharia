@@ -1,3 +1,4 @@
+import pytest
 from fibonacci import Fibonacci
 
 
@@ -23,3 +24,8 @@ def test_ten():
 
 def test_negative():
     assert list(Fibonacci(-1)) == []
+
+
+def test_invalid_input():
+    with pytest.raises(ValueError):
+        Fibonacci("abc")
