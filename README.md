@@ -1,15 +1,26 @@
-Fibonacci Iterator
+# Fibonacci Iterator
+
+## Description
 This project implements a Fibonacci iterable class in Python.
 
-Description
-The Fibonacci class generates a sequence of Fibonacci numbers up to a given index n.
+It generates a sequence of Fibonacci numbers up to a given number `n`.
 
-It follows the iterator protocol by implementing:
+---
 
-__iter__()
-__next__()
-Usage
+## Features
+- Uses an iterable class (`__iter__` and `__next__`)
+- Handles invalid input (raises `ValueError`)
+- Handles negative numbers (returns empty sequence)
+- Passes all unit tests using `pytest`
+
+---
+
+## Usage
+
+```python
 from fibonacci import Fibonacci
 
 fib = Fibonacci(5)
-print(list(fib))
+
+for num in fib:
+    print(num)
